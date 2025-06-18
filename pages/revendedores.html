@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <title>Tohatsu</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="navbar">
+        <ul>
+          <li><a href="/pages/ourstory.html">Nossa História</a></li>
+          <li><a href="/pages/products.html">Nossos Produtos</a></li>
+          <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
+          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
+        </ul>
+
+        <div class="logo"><a href="../index.html"><img src="../img/logo-tohatsu.png" alt="Logo Tohatsu"></a></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero_revendedores">
+    <div class="hero-content_revendedores">
+      <h1>Revendedores</h1>
+    </div>
+  </section>
+
+  <main class="revendedores-main">
+    <p class="revendedores-descricao">
+      Utilize nossa base para encontrar revendedores na sua região.
+    </p>
+  
+    <select id="estadoSelect" onchange="filtrarRevendedores()" class="revendedores-select">
+      <option value="">Escolha seu Estado</option>
+    </select>
+  
+    <hr class="revendedores-divider">
+  
+    <div id="mapa" class="revendedores-mapa"></div>
+  
+    <div id="listaRevendedores" class="revendedores-lista">
+      <!-- Os revendedores aparecerão aqui -->
+    </div>
+  </main>
+  
+
+  <script>
+    window.initMap = initMap;
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChgT_7GNG4MQTV_66um6Nl7Ul49lBOY8&callback=initMap" async defer></script>
+  <script src="../script.js"></script>
+
+  <footer>
+    <section class="footer">
+      <div class="footer_logo_kamell">
+        <img src="../img/Logo_Kamell.png" alt="Logo Kamell">
+      </div>
+
+      <ul class="footer_navbar">
+        <li><a href="/pages/ourstory.html">Nossa História</a></li>
+        <li><a href="/pages/products.html">Nossos Produtos</a></li>
+        <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
+        <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
+      </ul>
+
+      <div class="footer_logo_tohatsu">
+        <img src="../img/Logo_Tohatsu.png" alt="Logo Tohatsu">
+      </div>
+    </section>
+  </footer>
+
+</body>
