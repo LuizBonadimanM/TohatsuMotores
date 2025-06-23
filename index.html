@@ -6,15 +6,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
   <link rel="stylesheet" href="style.css">
-  <title>Tohatsu</title>
+  <title>TohatsuMotores</title>
 </head>
 
 <body>
   <header>
     <div class="header-container">
       <div class="navbar">
-        <ul>
+        <!-- Botão menu mobile -->
+      <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+        <ul id="itens" class="menu-mobile">
+          <li><a style="display: inline-block; width: 78.32vw; border-bottom: 2px solid #fff;" href="/pages/ourstory.html">Nossa História</a></li>
+          <li><a style="display: inline-block; width: 78.32vw; border-bottom: 2px solid #fff;" href="/pages/products.html">Nossos Produtos</a></li>
+          <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
+          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li>
+          <div class="menu-mobile-footer">
+            <a href="https://www.kamell.com.br" target="_blank">
+              <img src="img/Logo_Kamell.png" alt="Logo Kamell" class="logo-kamell-mobile">
+            </a>
+            <a href="https://www.instagram.com/kamellcomercio/" target="_blank" class="insta-mobile">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon-insta">
+            </a>
+          </div>
+        </ul>
+     
+      
+        <ul class="menu-desktop">
           <li><a href="/pages/ourstory.html">Nossa História</a></li>
           <li><a href="/pages/products.html">Nossos Produtos</a></li>
           <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
@@ -29,7 +49,7 @@
   <main>
     <section class="main-sections">
       <h1>A Potência Japonesa, combinada com a confiança Kamell.</h1>
-      <video class="video-background" src="/img/video.tohatsu.mp4" type="video/mp4" autoplay muted loop playsinline>Seu navegador não suporta a reprocução do vídeo</video>
+      <video class="video-background" src="img/video.tohatsu.mp4" type="video/mp4" autoplay muted loop playsinline>Seu navegador não suporta a reprocução do vídeo</video>
     </section>
 
     <section class="main-about">
@@ -90,10 +110,25 @@
         <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
       </ul>
 
-      <div class="footer_logo_tohatsu">
-        <img src="../img/Logo_Tohatsu.png" alt="Logo Tohatsu">
+      <div class="footer_logo_tohatsu1">
+        <img src="/img/Logo_Tohatsu.png" alt="Logo Tohatsu">
+      </div>
+
+      <div class="footer_logo_tohatsu2">
+        <img src="/img/Logo_Tohatsu2.png" alt="Logo Tohatsu">
       </div>
     </section>
   </footer>
+
+
+  <script>
+    function clickMenu() {
+      if (itens.style.display == 'flex') {
+        itens.style.display = 'none';
+      } else {
+        itens.style.display = 'flex';
+      }
+    }
+  </script>
 </body>
 </html>

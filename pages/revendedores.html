@@ -4,21 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="../style.css">
   <title>Tohatsu</title>
+
+  <style>
+    .busca-cidade {
+      padding: 1rem 2rem 0;
+    }
+  
+    .busca-cidade label {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #1f4f86;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+  
+    .search-wrapper {
+      display: flex;
+      max-width: 600px;
+      width: 100%;
+    }
+  
+    input#cityInput {
+      flex: 1;
+      font-size: 1.1rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      color: #000;
+      background-color: #fff;
+    }
+  
+    .search-wrapper button {
+      background-color: #1f4f86;
+      color: white;
+      padding: 0.9rem 1.2rem;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    .revendedor-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 2rem;
+    }
+  
+    #map {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+    }
+  
+    .dealer-lista {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .dealer-card {
+      background: #eef2f7;
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      color: #111;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+  
+    .dealer-card strong {
+      font-size: 1.2rem;
+      color: #1f4f86;
+    }
+  
+    .dealer-card a {
+    color: #1f4f86;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.4rem;
+  }
+
+.dealer-card a:hover {
+  text-decoration: underline;
+}
+
+    @media (min-width: 768px) {
+      .revendedor-container {
+        flex-wrap: nowrap;
+      }
+  
+      #map {
+        flex: 1 1 60%;
+        height: 600px;
+      }
+  
+      .dealer-lista {
+        flex: 1 1 40%;
+        max-height: 600px;
+        overflow-y: auto;
+        padding-left: 1rem;
+      }
+    }
+
+
+    @media (max-width: 425px) {
+    .dealer-card {
+      font-size: 1.5rem;
+      width: 100vw;
+      margin-left: -1rem;
+      border-radius: 0;
+    }
+      .dealer-card strong {
+      font-size: 1.5rem;
+    }
+    .dealer-card a {
+    font-size: 1.3rem;
+    }
+
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <div class="header-container">
       <div class="navbar">
-        <ul>
+        <!-- Botão menu mobile -->
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+        <ul id="itens" class="menu-mobile">
+          <li><a style="display: inline-block; width: 78.32vw; border-bottom: 2px solid #fff;" href="/pages/ourstory.html">Nossa História</a></li>
+          <li><a style="display: inline-block; width: 78.32vw; border-bottom: 2px solid #fff;" href="/pages/products.html">Nossos Produtos</a></li>
+          <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
+          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li>
+          <div class="menu-mobile-footer">
+            <a href="https://www.kamell.com.br" target="_blank">
+              <img src="../img/Logo_Kamell.png" alt="Logo Kamell" class="logo-kamell-mobile">
+            </a>
+            <a href="https://www.instagram.com/kamellcomercioglobal?igsh=MXRnbm5jdHM5NHR5aA==" target="_blank" class="insta-mobile">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon-insta">
+            </a>
+          </div>
+        </ul>
+
+        <ul class="menu-desktop">
           <li><a href="/pages/ourstory.html">Nossa História</a></li>
           <li><a href="/pages/products.html">Nossos Produtos</a></li>
           <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
-          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
+          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li>
         </ul>
 
         <div class="logo"><a href="../index.html"><img src="../img/logo-tohatsu.png" alt="Logo Tohatsu"></a></div>
@@ -33,26 +176,126 @@
   </section>
 
   
-
-
-
-  <footer>
-    <section class="footer">
-      <div class="footer_logo_kamell">
-        <img src="../img/Logo_Kamell.png" alt="Logo Kamell">
-      </div>
-
-      <ul class="footer_navbar">
-        <li><a href="/pages/ourstory.html">Nossa História</a></li>
-        <li><a href="/pages/products.html">Nossos Produtos</a></li>
-        <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
-        <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
-      </ul>
-
-      <div class="footer_logo_tohatsu">
-        <img src="../img/Logo_Tohatsu.png" alt="Logo Tohatsu">
-      </div>
+  <main>
+    <section class="busca-cidade">
+      <form onsubmit="searchDealers(); return false;">
+        <label for="cityInput">Pesquisar revendedor por cidade:</label><br/>
+        <div class="search-wrapper">
+          <input list="cityOptions" id="cityInput" placeholder="Ex: Vila Velha-ES" autocomplete="off"/>
+          <button type="submit">Procurar</button>
+          <datalist id="cityOptions"></datalist>
+        </div>
+      </form>
     </section>
-  </footer>
+  
+    <section class="revendedor-container">
+      <div id="map"></div>
+      <div class="dealer-lista" id="dealerList"></div>
+    </section>
+  </main>
+
+  <script>
+    let map;
+    let markers = [];
+    let dealerData = [];
+  
+    const apiURL = "https://script.google.com/macros/s/AKfycbxxR6yrxuXeA67RkbZi6Ide2vcgdH-rv8uEY8Ck5YHcAXtvDD6aBjB-quKIUgyunkEo/exec";
+  
+    async function fetchDealers() {
+      const res = await fetch(apiURL);
+      const data = await res.json();
+      dealerData = data;
+      fillCityOptions(data);
+      return data;
+    }
+  
+    function fillCityOptions(dealers) {
+      const cities = [...new Set(dealers.map(d => `${d.Cidade}-${d.Estado}`))].sort();
+      const datalist = document.getElementById("cityOptions");
+      datalist.innerHTML = cities.map(city => `<option value="${city}">`).join("");
+    }
+  
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -14.2350, lng: -51.9253 },
+        zoom: 4,
+      });
+  
+      fetchDealers();
+    }
+  
+    function searchDealers() {
+      const city = document.getElementById("cityInput").value.trim().toLowerCase();
+      const filtered = dealerData.filter(d => `${d.Cidade}-${d.Estado}`.toLowerCase().includes(city));
+  
+      document.getElementById("dealerList").innerHTML = "";
+      markers.forEach(m => m.setMap(null));
+      markers = [];
+  
+      if (filtered.length === 0) {
+        alert("Nenhum revendedor encontrado.");
+        return;
+      }
+  
+      const bounds = new google.maps.LatLngBounds();
+  
+      filtered.forEach(dealer => {
+        const position = { lat: parseFloat(dealer.Latitude), lng: parseFloat(dealer.Longitude) };
+        const marker = new google.maps.Marker({ position, map });
+        markers.push(marker);
+        bounds.extend(position);
+  
+        const div = document.createElement("div");
+        div.className = "dealer-card";
+        div.innerHTML = `
+          <strong>${dealer.Nome} - ${dealer.Cidade}, ${dealer.Estado}</strong><br/>
+          Telefone: ${dealer.Telefone}<br/>
+          Endereço: ${dealer.Endereço}<br/>
+          E-mail: ${dealer.Email}<br/>
+          ${dealer.Site ? `<a href="${dealer.Site}" target="_blank">Site</a><br/>` : ""}
+        `;
+        document.getElementById("dealerList").appendChild(div);
+      });
+  
+      map.fitBounds(bounds);
+    }
+  </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChgT_7GNG4MQTV_66um6Nl7Ul49lBOY8&callback=initMap">
+  </script>
+
+<script>
+  function clickMenu() {
+    if (itens.style.display == 'flex') {
+      itens.style.display = 'none';
+    } else {
+      itens.style.display = 'flex';
+    }
+  }
+</script>
+
+<footer>
+  <section class="footer">
+    <div class="footer_logo_kamell">
+      <img src="../img/Logo_Kamell.png" alt="Logo Kamell">
+    </div>
+
+    <ul class="footer_navbar">
+      <li><a href="/pages/ourstory.html">Nossa História</a></li>
+      <li><a href="/pages/products.html">Nossos Produtos</a></li>
+      <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
+      <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li>
+    </ul>
+
+    <div class="footer_logo_tohatsu1">
+      <img src="../img/Logo_Tohatsu.png" alt="Logo Tohatsu">
+    </div>
+    
+    <div class="footer_logo_tohatsu2">
+      <img src="/img/Logo_Tohatsu2.png" alt="Logo Tohatsu">
+    </div>
+  </section>
+</footer>
 
 </body>
