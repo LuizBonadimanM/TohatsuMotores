@@ -98,7 +98,7 @@
   text-decoration: underline;
 }
 
-    @media (min-width: 768px) {
+    @media (max-width: 900px) {
       .revendedor-container {
         flex-wrap: nowrap;
       }
@@ -113,6 +113,48 @@
         max-height: 600px;
         overflow-y: auto;
         padding-left: 1rem;
+      }
+      .dealer-card {
+      font-size: 1.5rem;
+      width: 100vw;
+      margin-left: -1rem;
+      border-radius: 0;
+      }
+        .dealer-card strong {
+        font-size: 1.5rem;
+      }
+      .dealer-card a {
+      font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .revendedor-container {
+        flex-wrap: nowrap;
+      }
+  
+      #map {
+        flex: 1 1 60%;
+        height: 600px;
+      }
+  
+      .dealer-lista {
+        flex: 1 1 40%;
+        max-height: 600px;
+        overflow-y: auto;
+        padding-left: 1rem;
+      }
+      .dealer-card {
+      font-size: 1.5rem;
+      width: 100vw;
+      margin-left: -1rem;
+      border-radius: 0;
+      }
+        .dealer-card strong {
+        font-size: 1.5rem;
+      }
+      .dealer-card a {
+      font-size: 1.3rem;
       }
     }
 
