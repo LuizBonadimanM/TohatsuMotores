@@ -1083,6 +1083,30 @@ body{
 }
 
 @media (max-width: 460px) {
+  .hero_products {
+    background-image: url(img/barco4mobile.jpg);
+    background-size: cover;
+  }
+  
+  .hero-content_products {
+    position: absolute;
+    top: 50%;
+    left: var(--distancia-left);
+    transform: translatey(-50%);
+    color: white;
+    text-align: start;
+    max-width: 15rem;
+  }
+
+  .hero-content_products h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+
   .motor-2t-img {
     left: 40%;
     top: 115%;
