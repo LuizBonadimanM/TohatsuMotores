@@ -46,7 +46,7 @@ body{
 .menu-mobile {
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   position: fixed;
   top: 100px; 
@@ -57,6 +57,7 @@ body{
   z-index: 1500;
   gap: 3rem;
   transition: all 0.3s;
+  padding-top: 5rem;
 }
 
 .menu-mobile li {
