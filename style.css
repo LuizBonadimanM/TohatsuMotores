@@ -585,7 +585,6 @@ body{
 .main_products span {
   font-size: 2rem;
   margin-left: 1rem;
-
 }
 
 .main_products button:hover {
@@ -758,6 +757,13 @@ body{
     left: 1%;
   }
 
+  .main_products button {
+    width: 47.6rem;
+    height: 6.4rem;
+    margin-top: 4rem;
+    margin-left: 41.2rem;
+  }
+
   .menu-desktop{
     display: flex;
     gap: 3rem;
@@ -771,20 +777,44 @@ body{
 
 
 @media (max-width: 768px) {
+  .main_products div {
+    width: 100%;
+    height: 40rem;
+    padding: 6rem 10rem;
+  }
+  
+  .main_products p {
+    font-size: 1.3rem;
+    letter-spacing: 1.5;
+    line-height: 160%;
+    font-weight: 400;
+    text-align: center;
+  }
+  
   .main_products img {
     position: absolute;
     width: auto;
-    height: 50%;
+    height: 30%;
   }
-
-  .motor-2t-img{
-    top: 25%;
-    left: -25%;
+  
+  .motor-2t-img {
+    top: 58%;
+    left: 35%;
   }
-  .motor-4t-img{
-    top: 25%;
-    left: -13%;
+  
+  .motor-4t-img {
+    top: 60%;
+    left: 40%;
   }
+  
+  .main_products button {
+    margin: 15rem auto 0 auto;
+    width: 80%;
+    max-width: 40rem;
+    font-size: 1.5rem;
+    height: 4rem;
+  }
+  
 
   .menu-desktop{
     display: none;
@@ -822,10 +852,27 @@ body{
     --distancia-left: 10%;
   }
   
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 58rem;
+    padding: 2.8rem;
+    gap: 3.5rem;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+  
   .about p {
     max-width: 100rem;
     color: #1A1D3A;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     letter-spacing: 1.5%;
     line-height: 1.5;
   }
@@ -891,7 +938,7 @@ body{
     align-items: center;
     flex: unset;
     width: 100%;
-    padding: 3rem 1.5rem; /* Ajuste de padding para telas menores */
+    padding: 3rem 1.5rem; 
   }
   .main-simpliq__logo {
     align-self: flex-start;
@@ -998,6 +1045,24 @@ body{
   .footer_logo_kamell {
     width: auto;
     height: 50%;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: var(--distancia-left);
+    transform: translatey(-50%);
+    color: white;
+    text-align: start;
+    max-width: 15rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -1177,20 +1242,11 @@ body{
   }
   
   .main_products button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 15rem auto 0 auto;
     width: 80%;
     max-width: 40rem;
     font-size: 1.5rem;
     height: 4rem;
-  }
-  
-  .main_products span {
-    font-size: 2rem;
-    margin-left: 1rem;
-  
   }
   
   .main_products button:hover {
