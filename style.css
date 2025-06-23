@@ -800,7 +800,7 @@ body{
   }
   
   .main_products p {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     letter-spacing: 1.5;
     line-height: 160%;
     font-weight: 400;
@@ -1087,7 +1087,7 @@ body{
     background-image: url(img/barco4mobile.jpg);
     background-size: cover;
   }
-  
+
   .hero-content_products {
     position: absolute;
     top: 50%;
