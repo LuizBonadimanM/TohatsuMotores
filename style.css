@@ -747,6 +747,213 @@ body{
   }
 
   .main-about img {
+    position: absolute;
+    top: -2%;
+    right: -22%;
+    left: auto;
+    width: auto;
+    height: 40rem;
+    max-width: 70vw;
+  }
+ 
+  .main-sections h1 {
+    position: absolute;
+    top: 50%;
+    left: var(--distancia-left);
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    max-width: 35rem;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  .hero {
+    background-image: url(img/barco2mobile.png);
+    background-size: cover;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: var(--distancia-left);
+    transform: translatey(-50%);
+    color: white;
+    text-align: start;
+    max-width: 15rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 58rem;
+    padding: 2.8rem;
+    gap: 3.5rem;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+  
+  .about p {
+    max-width: 100rem;
+    color: #1A1D3A;
+    font-size: 1.4rem;
+    letter-spacing: 1.5%;
+    line-height: 1.5;
+  }
+
+  .banner-barco {
+    width: 100%;
+    height: 23rem;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .banner-barco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero_products {
+    background-image: url(img/barco4mobile.jpg);
+    background-size: cover;
+  }
+
+  .hero-content_products {
+    position: absolute;
+    top: 50%;
+    left: var(--distancia-left);
+    transform: translatey(-50%);
+    color: white;
+    text-align: start;
+    max-width: 15rem;
+  }
+
+  .hero-content_products h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .main_products {
+    background-color: #fff;
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+  }
+  
+  .main_products h2 {
+    color: #12142B;
+    font-size: 6.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 6.5%;
+  }
+  
+  .main_products div {
+    background-color: #1A1D3A;
+    width: 100%;
+    height: 60rem;
+    padding: 6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .main_products p {
+    font-size: 1.3rem;
+    letter-spacing: 1.5;
+    line-height: 160%;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .main_products img {
+    position: absolute;
+    width: auto;
+    height: 35%;
+  }
+  
+  .motor-2t-img {
+    top: 52%;
+    left: 15%;
+  }
+  
+  .motor-4t-img {
+    top: 55%;
+    left: 28%;
+  }
+  
+  .main_products button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem auto 0 auto;
+    width: 80%;
+    max-width: 40rem;
+    font-size: 1.5rem;
+    height: 4rem;
+  }
+  
+  .main_products span {
+    font-size: 2rem;
+    margin-left: 1rem;
+  
+  }
+  
+  .main_products button:hover {
+    background-color: #2a2d52; 
+    transform: scale(1.01); 
+  }
+
+  .hero_revendedores {
+    background-image: url(img/barco5.jpg);
+    background-size: cover;
+  }
+
+  .hero-content_revendedores {
+    position: absolute;
+    top: 50%;
+    left: var(--distancia-left);
+    transform: translatey(-50%);
+    color: white;
+    text-align: start;
+    max-width: 15rem;
+  }
+
+  .hero-content_revendedores h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .main-about img {
     height: 48rem;
     max-width: 60vw;
     top: 0;
@@ -778,6 +985,7 @@ body{
     left: 1%;
   }
   
+
 }
 
 
