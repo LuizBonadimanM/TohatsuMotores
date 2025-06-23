@@ -49,10 +49,10 @@ body{
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 100px; /* altura do header */
+  top: 100px; 
   left: 0;
   width: 100vw;
-  height: calc(100vh - 100px); /* ocupa o restante da tela */
+  height: calc(100vh - 100px); 
   background: #292b43;
   z-index: 1500;
   gap: 3rem;
@@ -402,7 +402,8 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 25rem;
-  padding: 0 20rem;
+  width: auto;
+  padding: 5rem;
 }
 
 
@@ -749,7 +750,7 @@ body{
   .main-about img {
     position: absolute;
     top: -2%;
-    right: -1%;
+    right: 2%;
     left: auto;
     width: auto;
     height: 40rem;
@@ -979,6 +980,15 @@ body{
     left: 1%;
   }
   
+  .main-dealers__map-background img {
+    width: 60%; 
+    height: auto;
+    object-fit: contain;
+  }
+  .menu-desktop{
+   gap: 3rem;
+   margin-right: 5rem;
+  }
 
 }
 
@@ -997,7 +1007,7 @@ body{
   .main-about img {
     position: absolute;
     top: -2rem;
-    right: -5%;
+    right: 2%;
     left: auto;
     width: auto;
     height: auto;
@@ -1122,7 +1132,7 @@ body{
   }
   
   .main-dealers__map-background img {
-    width: 90%; 
+    width: 130%; 
     height: auto;
     object-fit: contain;
   }
@@ -1183,24 +1193,43 @@ body{
 
   .footer_logo_tohatsu1 {
     display: none;
+    width: auto;
+    height: 50%;
   }
 
   .footer_logo_tohatsu2 {
     display: block;
-
+    width: auto;
+    height: 50%;
   }
- 
+  
+  .footer_logo_kamell {
+    width: auto;
+    height: 50%;
+  }
 }
 
 @media (max-width: 425px) {
+  .footer_logo_tohatsu2 {
+    display: block;
+    width: auto;
+    height: 50%;
+  }
+  
+  .footer_logo_kamell {
+    width: auto;
+    height: 50%;
+  }
+  
   .main-about img {
     position: absolute;
-    top: -2%;
-    right: -22%;
+    top: -5%;
+    right: 2%;
     left: auto;
     width: auto;
     height: auto;
-    max-width: 70vw;
+    max-width: 50vw;
+    object-fit: cover;
   }
  
   .main-sections h1 {
