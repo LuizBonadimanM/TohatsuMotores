@@ -1220,11 +1220,11 @@ body{
     width: auto;
     height: 50%;
   }
-  
+
   .main-about img {
     position: absolute;
     top: -5%;
-    right: 2%;
+    right: 0;
     left: auto;
     width: auto;
     height: auto;
