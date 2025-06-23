@@ -1082,6 +1082,24 @@ body{
   }
 }
 
+@media (max-width: 460px) {
+  .motor-2t-img {
+    left: 40%;
+    top: 115%;
+    transform: translate(-50%, -50%);
+    height: 60%; 
+    z-index: 2;
+  }
+
+  .motor-4t-img {
+    left: 50%;
+    top: 115%;
+    transform: translate(-50%, -50%);
+    height: 70%; 
+    z-index: 2;
+  }
+}
+
 @media (max-width: 425px) {
   .footer_logo_tohatsu2 {
     display: block;
