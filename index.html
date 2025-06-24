@@ -1,133 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-  <link rel="stylesheet" href="style.css">
-  <title>TohatsuMotores</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TohatsuMotores</title>
+  </head>
 
-<body>
-  <header>
-    <div class="header-container">
-      <div class="navbar">
-      <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="navbar">
+          <span
+            id="burger"
+            class="material-symbols-outlined"
+            onclick="clickMenu()"
+            >menu</span
+          >
 
-        <ul id="itens" class="menu-mobile">
-          <li><a style="display: inline-block; width: 78.32vw; border-bottom: 2px solid #fff;" href="/pages/ourstory.html">Nossa História</a></li>
-          <li><a style="display: inline-block; width: 78.32vw; border-bottom: 2px solid #fff;" href="/pages/products.html">Nossos Produtos</a></li>
-          <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
-          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li>
-          <div class="menu-mobile-footer">
-            <a href="https://www.kamell.com.br" target="_blank">
-              <img src="img/Logo_Kamell.png" alt="Logo Kamell" class="logo-kamell-mobile">
-            </a>
-            <a href="https://www.instagram.com/kamellcomercioglobal?igsh=MTI4dTYyMzM3eHJ5Zw==" target="_blank" class="insta-mobile">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon-insta">
-            </a>
+          <ul id="itens" class="menu-mobile">
+            <li>
+              <a
+                style="
+                  display: inline-block;
+                  width: 78.32vw;
+                  border-bottom: 2px solid #fff;
+                "
+                href="/pages/ourstory.html"
+                >Nossa História</a
+              >
+            </li>
+            <li>
+              <a
+                style="
+                  display: inline-block;
+                  width: 78.32vw;
+                  border-bottom: 2px solid #fff;
+                "
+                href="/pages/products.html"
+                >Nossos Produtos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tohatsu-partscatalog.aftama.com/ex/search"
+                target="blank"
+                rel="noopener noreferrer"
+                >Nossas Peças</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5527998548882"
+                target="_blank"
+                class="btn-contato"
+                >Contato</a
+              >
+            </li>
+            <div class="menu-mobile-footer">
+              <a href="https://www.kamell.com.br" target="_blank">
+                <img
+                  src="img/Logo_Kamell.png"
+                  alt="Logo Kamell"
+                  class="logo-kamell-mobile"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/kamellcomercioglobal?igsh=MTI4dTYyMzM3eHJ5Zw=="
+                target="_blank"
+                class="insta-mobile"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                  alt="Instagram"
+                  class="icon-insta"
+                />
+              </a>
+            </div>
+          </ul>
+
+          <ul class="menu-desktop">
+            <li><a href="/pages/ourstory.html">Nossa História</a></li>
+            <li><a href="/pages/products.html">Nossos Produtos</a></li>
+            <li>
+              <a
+                href="https://tohatsu-partscatalog.aftama.com/ex/search"
+                target="blank"
+                rel="noopener noreferrer"
+                >Nossas Peças</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5527998548882"
+                target="_blank"
+                class="btn-contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+
+          <div class="logo">
+            <a href="index.html"
+              ><img src="img/logo-tohatsu.png" alt="Logo Tohatsu"
+            /></a>
           </div>
-        </ul>
-     
-      
-        <ul class="menu-desktop">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-sections">
+        <h1>A Potência Japonesa, combinada com a confiança Kamell.</h1>
+        <video
+          class="video-background"
+          src="img/video.tohatsu.mp4"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          Seu navegador não suporta a reprocução do vídeo
+        </video>
+      </section>
+
+      <section class="main-about">
+        <div class="main-about__hero-img-wrapper">
+          <div class="main-about__hero">
+            <h2>
+              Tecnologia projetada para oferecer a <br />
+              melhor experiência em navegação
+            </h2>
+          </div>
+          <img
+            src="img/2 Motores.png"
+            alt="2 Motores Tohatsu"
+            class="main-about__img--mobile"
+          />
+        </div>
+        <img
+          src="img/2 Motores.png"
+          alt="2 Motores Tohatsu"
+          class="main-about__img--desktop"
+        />
+        <div class="main-about__content">
+          <p>
+            O barco é uma alma gêmea do mar, do rio e do lago. Os barcos
+            mergulham você na natureza e o levam a experiências
+            <br />inesquecíveis. E o motor de popa ajuda a tornar tudo isso
+            possível
+          </p>
+          <p>
+            Motores de popa são muito mais do que apenas especificações. Um
+            motor realmente excelente oferece tudo isso: desempenho, segurança e
+            a máxima facilidade de uso. É por isso que nunca paramos de nos
+            perguntar as questões essenciais sobre o que <br />torna um motor
+            excelente e fazemos isso desde 1922.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-simpliq">
+        <div class="main-simpliq__image">
+          <img src="img/barco.jpg" alt="Barco Tohatsu navegando" />
+        </div>
+        <div class="main-simpliq__content">
+          <div class="main-simpliq__logo">
+            <img src="img/Simpliq.png" alt="Simpliq Technology Logo" />
+          </div>
+          <div class="main-simpliq__text">
+            <p>
+              O barco é uma alma gêmea do mar, do rio e do lago. Os barcos
+              mergulham você na natureza e o levam a experiências inesquecíveis.
+              E o motor de popa ajuda a tornar tudo isso possível.
+            </p>
+            <p>
+              Motores de popa são muito mais do que apenas especificações. Um
+              motor realmente excelente oferece tudo isso: desempenho, segurança
+              e a máxima facilidade de uso. É por isso que nunca paramos de nos
+              perguntar as questões essenciais sobre o que torna um motor
+              excelente e fazemos isso desde 1922.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-dealers">
+        <div class="main-dealers__motor-image">
+          <img src="img/Motor.png" alt="" />
+        </div>
+        <div class="main-dealers__map-background">
+          <img src="img/Mapa Brasil.png" alt="Mapa do Brasil" />
+        </div>
+        <div class="main-dealers__content">
+          <h2>Revendedores</h2>
+          <p>Use nossa base de parceiros para encontrar um revendedor.</p>
+          <a href="/pages/revendedores.html" class="btn-dealers"
+            >Acesse nossa lista de revendedores
+            <span class="play-icon">&#9654;</span></a
+          >
+        </div>
+      </section>
+    </main>
+    s
+
+    <footer>
+      <section class="footer">
+        <div class="footer_logo_kamell">
+          <img src="img/Logo_Kamell.png" alt="Logo Kamell" />
+        </div>
+
+        <ul class="footer_navbar">
           <li><a href="/pages/ourstory.html">Nossa História</a></li>
           <li><a href="/pages/products.html">Nossos Produtos</a></li>
-          <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
-          <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
+          <li>
+            <a
+              href="https://tohatsu-partscatalog.aftama.com/ex/search"
+              target="blank"
+              rel="noopener noreferrer"
+              >Nossas Peças</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://wa.me/5527998548882"
+              target="_blank"
+              class="btn-contato"
+              >Contato</a
+            >
+          </li>
         </ul>
 
-        <div class="logo"><a href="index.html"><img src="img/logo-tohatsu.png" alt="Logo Tohatsu"></a></div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="main-sections">
-      <h1>A Potência Japonesa, combinada com a confiança Kamell.</h1>
-      <video class="video-background" src="img/video.tohatsu.mp4" type="video/mp4" autoplay muted loop playsinline>Seu navegador não suporta a reprocução do vídeo</video>
-    </section>
-
-    <section class="main-about">
-      <div class="main-about__hero">
-          <h2>Tecnologia projetada para oferecer a <br>melhor experiência em navegação</h2>
-      </div>
-
-      <div class="main-about__content">
-        <p>O barco é uma alma gêmea do mar, do rio e do lago. Os barcos mergulham você na natureza e o levam a experiências <br>inesquecíveis. E o motor de popa ajuda a tornar tudo isso possível</p>
-        <p>Motores de popa são muito mais do que apenas especificações. Um motor realmente excelente oferece tudo isso: desempenho, segurança e a máxima facilidade de uso. É por isso que nunca paramos de nos perguntar as questões essenciais sobre o que <br>torna um motor excelente e fazemos isso desde 1922.</p>
-      </div>
-      <img src="img/2 Motores.png" alt="2 Motores Tohatsu">
-    </section>
-
-
-    <section class="main-simpliq">
-      <div class="main-simpliq__image">
-        <img src="img/barco.jpg" alt="Barco Tohatsu navegando">
-      </div>
-      <div class="main-simpliq__content">
-        <div class="main-simpliq__logo">
-          <img src="img/Simpliq.png" alt="Simpliq Technology Logo">
+        <div class="footer_logo_tohatsu1">
+          <img src="/img/Logo_Tohatsu.png" alt="Logo Tohatsu" />
         </div>
-        <div class="main-simpliq__text">
-          <p>O barco é uma alma gêmea do mar, do rio e do lago. Os barcos mergulham você na natureza e o levam a experiências inesquecíveis. E o motor de popa ajuda a tornar tudo isso possível.</p>
-          <p>Motores de popa são muito mais do que apenas especificações. Um motor realmente excelente oferece tudo isso: desempenho, segurança e a máxima facilidade de uso. É por isso que nunca paramos de nos perguntar as questões essenciais sobre o que torna um motor excelente e fazemos isso desde 1922.</p>
+
+        <div class="footer_logo_tohatsu2">
+          <img src="/img/Logo_Tohatsu2.png" alt="Logo Tohatsu" />
         </div>
-      </div> 
-    </section>
+      </section>
+    </footer>
 
-    <section class="main-dealers">
-      <div class="main-dealers__motor-image">
-        <img src="img/Motor.png" alt="">
-      </div>
-      <div class="main-dealers__map-background">
-        <img src="img/Mapa Brasil.png" alt="Mapa do Brasil">
-      </div>
-      <div class="main-dealers__content">
-        <h2>Revendedores</h2>
-        <p>Use nossa base de parceiros para encontrar um revendedor.</p>
-        <a href="/pages/revendedores.html" class="btn-dealers">Acesse nossa lista de revendedores <span class="play-icon">&#9654;</span></a>
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer>
-    <section class="footer">
-      <div class="footer_logo_kamell">
-        <img src="img/Logo_Kamell.png" alt="Logo Kamell">
-      </div>
-
-      <ul class="footer_navbar">
-        <li><a href="/pages/ourstory.html">Nossa História</a></li>
-        <li><a href="/pages/products.html">Nossos Produtos</a></li>
-        <li><a href="https://tohatsu-partscatalog.aftama.com/ex/search" target="blank" rel="noopener noreferrer">Nossas Peças</a></li>
-        <li><a href="https://wa.me/5527998548882" target="_blank" class="btn-contato">Contato</a></li> 
-      </ul>
-
-      <div class="footer_logo_tohatsu1">
-        <img src="/img/Logo_Tohatsu.png" alt="Logo Tohatsu">
-      </div>
-
-      <div class="footer_logo_tohatsu2">
-        <img src="/img/Logo_Tohatsu2.png" alt="Logo Tohatsu">
-      </div>
-    </section>
-  </footer>
-
-
-  <script>
-    function clickMenu() {
-      if (itens.style.display == 'flex') {
-        itens.style.display = 'none';
-      } else {
-        itens.style.display = 'flex';
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "flex") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "flex";
+        }
       }
-    }
-  </script>
-</body>
+    </script>
+  </body>
 </html>
