@@ -19,11 +19,15 @@ body{
   padding-top: 100px; 
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .header-container{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 2000; 
   background-color: #12142B;
   display: flex;
@@ -681,7 +685,7 @@ body{
 
 .main_products div {
   background-color: #1A1D3A;
-  width: 80rem;
+  width: 88rem;
   height: 49rem;
   padding: 9rem 8rem 7rem 16rem;
   display: flex;
@@ -706,7 +710,6 @@ body{
   max-width: 60rem;
 }
 
-
 .motor-2t-img {
   width: auto;
   height: 150%;
@@ -730,7 +733,6 @@ body{
   margin-left: 33rem;
   text-align: center;
   cursor: pointer;
-
 }
 
 .main_products span {
@@ -744,12 +746,9 @@ body{
 }
 
 
-
 /* -----------------Responsividade----------------- */
 
 @media (max-width: 1200px) {
-  
-
   .main_products button {
     width: 47.6rem;
     height: 6.4rem;
@@ -1092,7 +1091,7 @@ body{
   .main-about img {
     position: absolute;
     top: 2%;
-    right: 0%;
+    right: 2%;
     left: auto;
     width: auto;
     height: auto;
