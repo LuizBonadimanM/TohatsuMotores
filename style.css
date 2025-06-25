@@ -703,10 +703,16 @@ html, body {
 }
 
 .main_products p {
+  box-sizing: border-box;
   font-size: 1.7rem;
-  letter-spacing: 1.5;
   line-height: 150%;
   font-weight: 400;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem; /* adiciona espaçamento interno lateral */
+  overflow-wrap: break-word;
+  word-break: break-word;
+  letter-spacing: 1.5;
   max-width: 60rem;
 }
 
@@ -1040,38 +1046,58 @@ html, body {
   }
 
   .main_products {
-    height: 110rem;
+    height: 90rem;
     align-items: center;
     justify-content: start;
   }
 
   .main_products div {
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
     height: 55rem;
-    padding: 4rem 11rem 7rem;
+    padding: 4rem ;
+    margin: 0 1%;
     gap: 3rem;
   }
 
   .main_products h2 {
-    font-size: 8rem;
+    font-size: 7rem;
     height: 7%;
   }
 
   .motor-2t-img {
     width: auto;
-    height: 100%;
-    margin: 35rem 0 0 -85rem;
+    height: 70%;
+    margin: 38rem 0 0 -85rem;
   }
   
   .motor-4t-img {
     width: auto;
-    height: 100%;
-    margin: 32rem 0 0 -75rem;
+    height: 80%;
+    margin: 35rem 0 0 -83rem;
   }
 
   .main_products button {
-    margin-top: 30rem;
-    margin-left: 0;  
+    margin-top: 20rem; 
+    width: 35rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .main_products p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    max-width: 80%;
+    width: 100%;
+    padding: 0 1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    letter-spacing: 1.5;
+    max-width: 60rem;
+  }
+
+  #main_products-content {
+    text-align: center;
   }
 }
 
@@ -1236,8 +1262,8 @@ html, body {
   }
 
   .main_products h2 {
-    font-size: 7rem;
-    height: 7%;
+    font-size: 6rem;
+    height: 6%;
   }
 
   .motor-2t-img {
@@ -1260,11 +1286,14 @@ html, body {
   }
 
   .main_products p {
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    max-width: 80%;
+    width: 100%;
+    padding: 0 1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
     letter-spacing: 1.5;
-    line-height: 150%;
-    font-weight: 400;
-    max-width: 38rem;
+    max-width: 60rem;
   }
 
   #main_products-content {
