@@ -248,8 +248,7 @@ html, body {
   right: 10%;
   left: auto;
   width: auto;
-  height: 60rem;
-  max-width: 50vw;
+  height: 40vw;
 }
 
 
@@ -779,6 +778,12 @@ html, body {
 
   }
 
+  
+.main-about img {
+  top: -5rem;
+  height: 40vw;
+}
+
   .motor-2t-img {
     width: auto;
     height: 150%;
@@ -806,14 +811,11 @@ html, body {
     font-size: 3rem;
   }
   
+  
   .main-about img {
-    position: absolute;
-    top: -2rem;
-    right: -2%;
-    left: auto;
-    width: auto;
-    height: auto;
-    max-width: 50%;
+    top: -5rem;
+    right: -5%;
+    height: 400px;
   }
   
   .menu-mobile a{ 
@@ -1046,8 +1048,7 @@ html, body {
   }
 
   .main_products {
-    height: clamp(80rem, 120vw, 100rem);
-
+    height: clamp(90rem, 120vw, 120rem);
     align-items: center;
     justify-content: start;
   }
@@ -1062,7 +1063,7 @@ html, body {
 
   .main_products h2 {
     font-size: 7rem;
-    height: 7%;
+    height: 7.4%;
   }
 
   .motor-2t-img {
@@ -1080,7 +1081,7 @@ html, body {
   }
 
   .main_products button {
-    margin-top: 40vw; 
+    margin-top: 45vw; 
     width: 35rem;
     height: 4rem;
     font-size: 1.5rem;
@@ -1116,15 +1117,10 @@ html, body {
     height: 50%;
   }
 
-  .main-about img {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    left: auto;
-    width: auto;
-    height: auto;
-    max-width: 50vw;
-    object-fit: cover;
+    .main-about img {
+    top: -1vw;
+    right: -10rem;
+    height: 400px;
   }
  
   .main-sections h1 {
@@ -1251,7 +1247,7 @@ html, body {
 
 
   .main_products {
-    height: 75rem;
+    height: 85rem;
     align-items: center;
     justify-content: start;
   }
@@ -1266,7 +1262,7 @@ html, body {
 
   .main_products h2 {
     font-size: 6rem;
-    height: 7%;
+    height: 7.7%;
   }
 
   .motor-2t-img {
@@ -1283,10 +1279,11 @@ html, body {
     height: 85vw;
     max-width: 100%;
     transform: translateX(-15%);
+    margin-bottom: 1000rem;
   }
 
   .main_products button {
-    margin-top: 60vw; 
+    margin-top: 70vw; 
     width: 35rem;
     height: 4rem;
     font-size: 1.5rem;
