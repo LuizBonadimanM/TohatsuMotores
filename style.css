@@ -1087,7 +1087,7 @@ html, body {
   }
 
   .main_products p {
-    font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.3rem, 2.3vw, 1.7rem);
     max-width: 80%;
     width: 100%;
     padding: 0 1rem;
