@@ -1104,6 +1104,13 @@ html, body {
   }
 }
 
+@media (max-width: 455px) {
+  .main-about img {
+    top: -1vw;
+    right: -5rem;
+    height: 400px;
+  }
+}
 
 @media (max-width: 425px) {
   .footer_logo_tohatsu2 {
