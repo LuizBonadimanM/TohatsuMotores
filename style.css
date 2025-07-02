@@ -280,8 +280,8 @@ html, body {
   flex: 1.3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 2rem 6rem; 
+  justify-content: start;
+  padding: 5rem 6rem; 
   color: #fff;
   background: #181a32;
 }
@@ -750,11 +750,43 @@ html, body {
   transform: scale(1.01); 
 }
 
+.btn-catalogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1D3A;
+  color: #fff;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 47.6rem;
+  height: 6.4rem;
+  margin-top: 4rem;
+  margin-left: 40rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-catalogo .play-icon {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.btn-catalogo:hover {
+  background-color: #2a2d52;
+  color: #fff;
+  transform: scale(1.01);
+}
 
 /* -----------------Responsividade----------------- */
 
 @media (max-width: 1200px) {
-  .main_products button {
+  .btn-catalogo {
     width: 47.6rem;
     height: 6.4rem;
     margin-top: 4rem;
@@ -770,12 +802,19 @@ html, body {
   :root {
     --distancia-left: 15rem;
   } 
+
+  .btn-catalogo {
+    width: 47.6rem;
+    height: 6.4rem;
+    margin-top: 4rem;
+    margin-left: 41.2rem;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1024px){
-  .main_products button {
+  .btn-catalogo {
     margin-left: 32rem;
-
   }
 
   
@@ -795,6 +834,13 @@ html, body {
     width: auto;
     height: 170%;
     margin: -13rem 0 0 -30rem;
+  }
+
+  .btn-catalogo {
+    margin-left: 32rem;
+    width: 47.6rem;
+    height: 6.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -1080,7 +1126,7 @@ html, body {
     transform: translateX(-18%);
   }
 
-  .main_products button {
+  .btn-catalogo {
     margin-top: 45vw; 
     width: 35rem;
     height: 4rem;
@@ -1101,6 +1147,14 @@ html, body {
 
   #main_products-content {
     text-align: center;
+  }
+
+  .btn-catalogo {
+    margin-top: 45vw;
+    width: 35rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-left: 0;
   }
 }
 
@@ -1289,7 +1343,8 @@ html, body {
     margin-bottom: 1000rem;
   }
 
-  .main_products button {
+  .btn-catalogo {
+    text-align: center;
     margin-top: 70vw; 
     width: 35rem;
     height: 4rem;
@@ -1307,6 +1362,13 @@ html, body {
     max-width: 100rem;
   }
 
+  .btn-catalogo {
+    margin-top: 70vw;
+    width: 35rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
 }
 
 
