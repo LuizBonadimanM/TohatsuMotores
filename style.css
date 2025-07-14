@@ -785,7 +785,7 @@ html, body {
 
 /* -----------------Responsividade----------------- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .btn-catalogo {
     width: 47.6rem;
     height: 6.4rem;
@@ -817,7 +817,10 @@ html, body {
     margin-left: 32rem;
   }
 
-  
+  :root {
+    --distancia-left: 5rem;
+  } 
+
 .main-about img {
   top: -5rem;
   height: 40vw;
@@ -830,10 +833,9 @@ html, body {
   }
   
   .motor-4t-img {
-    justify-content: left;
     width: auto;
     height: 170%;
-    margin: -13rem 0 0 -30rem;
+    margin: -13rem 0 0 -120rem;
   }
 
   .btn-catalogo {
@@ -841,6 +843,12 @@ html, body {
     width: 47.6rem;
     height: 6.4rem;
     font-size: 2rem;
+  }
+
+  .menu-desktop{
+    display: flex;
+    gap: 3rem;
+    margin-right: 5rem;
   }
 }
 
